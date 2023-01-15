@@ -1,0 +1,17 @@
+{
+    "name": "william/image_gallery",
+    "description": "An image gallery application",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/",
+            "Model\\": "api/models/",
+            "Module\\": "modules/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "firebase/php-jwt": "dev-main",
+        "vlucas/phpdotenv": "5.5.x-dev"
+    }
+}
