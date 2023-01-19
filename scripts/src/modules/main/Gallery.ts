@@ -14,6 +14,7 @@ class Gallery {
     imageProperty: imagePropertiesI
   ): void {
     imgTag.setAttribute("src", `./../images/${imageProperty.name}`);
+    imgTag.setAttribute("class","gallery-image")
     imgTag.setAttribute("data-image-id", `${imageProperty.id}`);
   }
 

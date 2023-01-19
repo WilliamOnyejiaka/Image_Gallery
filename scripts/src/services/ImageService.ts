@@ -47,6 +47,18 @@ class ImageService {
 
     return await response.json();
   }
+
+  public async deleteImage(imageId:string,token:string) {
+    const response = await fetch(`${this.baseUrl}/delete-image?id=${imageId}`,{
+      method:'DELETE',
+      credentials:'include',
+      headers:{
+        Authorization:`Bearer ${token}`
+      }
+    });
+
+    return await response.json();
+  }
 }
 
 export default ImageService;

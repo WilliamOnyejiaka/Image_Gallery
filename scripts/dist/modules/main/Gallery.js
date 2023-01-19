@@ -5,6 +5,7 @@ class Gallery {
     }
     setAttributes(imgTag, imageProperty) {
         imgTag.setAttribute("src", `./../images/${imageProperty.name}`);
+        imgTag.setAttribute("class", "gallery-image");
         imgTag.setAttribute("data-image-id", `${imageProperty.id}`);
     }
     createImgTags() {

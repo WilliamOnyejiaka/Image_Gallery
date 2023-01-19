@@ -1,6 +1,5 @@
 import { AuthService,ImageService } from "./../services/services.js";
 import TokenHandler from "./../modules/main/TokenHandler.js";
-import CookieHandlerExtended from "./../lib/cookie_handler/CookieHandlerExtended.js";
 
 const tokenHandler = new TokenHandler();
 

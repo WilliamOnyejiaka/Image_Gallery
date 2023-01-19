@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../public/assets/bootstrap5/css/bootstrap.css">
+    <script defer type="module" src="./../scripts/dist/DOM/displayImage.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="./gallery.html">Sign Up</a>
+
+                    <a class="nav-link active" href="./signUp.html">Sign Up</a>
+                    <a class="nav-link active" href="#" id="log-out">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card mb-3" style="max-width: 540px; margin-top: 10px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="" class="img-fluid rounded-start" alt="..." id="image-placeholder">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted" id="created-at"></small></p>
+                        <a href="#" class="btn btn-danger" id="delete-btn">Delete</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../public/assets/bootstrap5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

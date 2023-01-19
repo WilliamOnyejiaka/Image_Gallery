@@ -1,6 +1,6 @@
 import {AuthService} from './../services/services.js'; 
 
-async function testl(){
+async function signUp(){
     const name:string = "Micky Locky";
     const email:string = "email@gmail.com";
     const password:string = "password";
@@ -8,4 +8,4 @@ async function testl(){
     console.log(data);
 } 
 
-testl();
+signUp();

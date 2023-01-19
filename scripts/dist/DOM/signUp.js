@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { AuthService } from './../services/services.js';
-function testl() {
+function signUp() {
     return __awaiter(this, void 0, void 0, function* () {
         const name = "Micky Locky";
         const email = "email@gmail.com";
@@ -17,4 +17,4 @@ function testl() {
         console.log(data);
     });
 }
-testl();
+signUp();

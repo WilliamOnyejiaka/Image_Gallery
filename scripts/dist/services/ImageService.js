@@ -48,5 +48,17 @@ class ImageService {
             return yield response.json();
         });
     }
+    deleteImage(imageId, token) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const response = yield fetch(`${this.baseUrl}/delete-image?id=${imageId}`, {
+                method: 'DELETE',
+                credentials: 'include',
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            return yield response.json();
+        });
+    }
 }
 export default ImageService;
